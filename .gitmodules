@@ -22,3 +22,54 @@
 [submodule "extensions/xssfilter"]
 	path = extensions/xssfilter
 	url = git://github.com/symphonycms/xssfilter.git
+[submodule "extensions/quickds"]
+	path = extensions/quickds
+	url = git://github.com/knupska/quickds.git
+[submodule "extensions/subsectionmanager"]
+	path = extensions/subsectionmanager
+	url = git://github.com/hananils/subsectionmanager.git
+[submodule "extensions/reflectionfield"]
+	path = extensions/reflectionfield
+	url = git://github.com/symphonists/reflectionfield.git
+[submodule "extensions/members"]
+	path = extensions/members
+	url = git://github.com/symphonycms/members.git
+[submodule "extensions/search_index"]
+	path = extensions/search_index
+	url = git://github.com/symphonists/search_index.git
+[submodule "extensions/documenter"]
+	path = extensions/documenter
+	url = git://github.com/symphonists/documenter.git
+[submodule "extensions/paypal_payments"]
+	path = extensions/paypal_payments
+	url = git://github.com/symphonists/paypal_payments.git
+[submodule "extensions/url_segments"]
+	path = extensions/url_segments
+	url = git://github.com/symphonists/url_segments.git
+[submodule "extensions/jquery_date_picker"]
+	path = extensions/jquery_date_picker
+	url = git://github.com/symphonists/jquery_date_picker.git
+[submodule "extensions/richtext_tinymce"]
+	path = extensions/richtext_tinymce
+	url = git://github.com/symphonists/richtext_tinymce.git
+[submodule "extensions/uniqueuploadfield"]
+	path = extensions/uniqueuploadfield
+	url = git://github.com/michael-e/uniqueuploadfield.git
+[submodule "extensions/datemodified"]
+	path = extensions/datemodified
+	url = git://github.com/symphonists/datemodified.git
+[submodule "extensions/order_entries"]
+	path = extensions/order_entries
+	url = git://github.com/nickdunn/order_entries.git
+[submodule "extensions/xml_selectbox"]
+	path = extensions/xml_selectbox
+	url = git://github.com/nickdunn/xml_selectbox.git
+[submodule "extensions/publishfiltering"]
+	path = extensions/publishfiltering
+	url = git://github.com/nickdunn/publishfiltering.git
+[submodule "extensions/publish_tabs"]
+	path = extensions/publish_tabs
+	url = git://github.com/nickdunn/publish_tabs.git
+[submodule "extensions/html_panel"]
+	path = extensions/html_panel
+	url = git://github.com/nickdunn/html_panel.git

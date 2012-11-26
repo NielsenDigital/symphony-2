@@ -1,6 +1,7 @@
 .htaccess
 .project
 .DS_Store
+/.settings/
 workspace/
 manifest/
 install-log.txt
