@@ -73,3 +73,6 @@
 [submodule "extensions/html_panel"]
 	path = extensions/html_panel
 	url = git://github.com/nickdunn/html_panel.git
+[submodule "extensions/pagesfield"]
+	path = extensions/pagesfield
+	url = git://github.com/symphonists/pagesfield.git
