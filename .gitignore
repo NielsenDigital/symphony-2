@@ -6,4 +6,3 @@ workspace/
 manifest/
 install-log.txt
 install/logs/
-install/*
