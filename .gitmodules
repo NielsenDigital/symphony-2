@@ -28,15 +28,9 @@
 [submodule "extensions/subsectionmanager"]
 	path = extensions/subsectionmanager
 	url = git://github.com/hananils/subsectionmanager.git
-[submodule "extensions/reflectionfield"]
-	path = extensions/reflectionfield
-	url = git://github.com/symphonists/reflectionfield.git
 [submodule "extensions/members"]
 	path = extensions/members
 	url = git://github.com/symphonycms/members.git
-[submodule "extensions/search_index"]
-	path = extensions/search_index
-	url = git://github.com/symphonists/search_index.git
 [submodule "extensions/documenter"]
 	path = extensions/documenter
 	url = git://github.com/symphonists/documenter.git
@@ -76,3 +70,9 @@
 [submodule "extensions/pagesfield"]
 	path = extensions/pagesfield
 	url = git://github.com/symphonists/pagesfield.git
+[submodule "extensions/reflectionfield"]
+	path = extensions/reflectionfield
+	url = git://github.com/symphonists/reflectionfield.git
+[submodule "extensions/search_index"]
+	path = extensions/search_index
+	url = git://github.com/symphonists/search_index.git
