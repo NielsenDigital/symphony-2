@@ -76,3 +76,36 @@
 [submodule "extensions/search_index"]
 	path = extensions/search_index
 	url = git://github.com/symphonists/search_index.git
+[submodule "extensions/section_schemas"]
+	path = extensions/section_schemas
+	url = git://github.com/nickdunn/section_schemas.git
+[submodule "extensions/sitemap"]
+	path = extensions/sitemap
+	url = git://github.com/nickdunn/sitemap.git
+[submodule "extensions/vimeo_videos"]
+	path = extensions/vimeo_videos
+	url = git://github.com/nickdunn/vimeo_videos.git
+[submodule "extensions/xmlimporter"]
+	path = extensions/xmlimporter
+	url = git://github.com/symphonists/xmlimporter.git
+[submodule "extensions/referencelink"]
+	path = extensions/referencelink
+	url = git://github.com/symphonists/referencelink.git
+[submodule "extensions/quickevent"]
+	path = extensions/quickevent
+	url = git://github.com/knupska/quickevent.git
+[submodule "extensions/recaptcha"]
+	path = extensions/recaptcha
+	url = git@github.com:wjn/recaptcha.git
+[submodule "extensions/textboxfield"]
+	path = extensions/textboxfield
+	url = git://github.com/rowan-lewis/textboxfield.git
+[submodule "extensions/resave_entries"]
+	path = extensions/resave_entries
+	url = git://github.com/alpacaaa/resave_entries.git
+[submodule "extensions/markitup"]
+	path = extensions/markitup
+	url = git@github.com:wjn/markitup.git
+[submodule "extensions/s3upload_field"]
+	path = extensions/s3upload_field
+	url = git@github.com:wjn/s3upload_field.git
