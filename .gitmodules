@@ -1,6 +1,9 @@
 [submodule "extensions/export_ensemble"]
 	path = extensions/export_ensemble
 	url = git://github.com/symphonycms/export_ensemble.git
+[submodule "extensions/asdc"]
+	path = extensions/asdc
+	url = git://github.com/symphonycms/asdc.git
 [submodule "extensions/markdown"]
 	path = extensions/markdown
 	url = git://github.com/symphonycms/markdown.git
