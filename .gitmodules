@@ -115,3 +115,6 @@
 [submodule "extensions/s3upload_field"]
 	path = extensions/s3upload_field
 	url = git@github.com:wjn/s3upload_field.git
+[submodule "extensions"]
+	path = extensions
+	url = git@github.com:wjn/extensions.git
