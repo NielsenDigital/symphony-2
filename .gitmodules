@@ -4,6 +4,9 @@
 [submodule "extensions/asdc"]
 	path = extensions/asdc
 	url = git://github.com/symphonycms/asdc.git
+[submodule "extensions/breadcrumb"]
+	path = extensions/breadcrumb
+	url = git://github.com/symphonists/breadcrumb.git
 [submodule "extensions/markdown"]
 	path = extensions/markdown
 	url = git://github.com/symphonycms/markdown.git
