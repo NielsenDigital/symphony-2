@@ -3,6 +3,7 @@
 .DS_Store
 /.settings/
 workspace/
+extensions/
 manifest/
 install-log.txt
 install/logs/

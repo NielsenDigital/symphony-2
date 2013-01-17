@@ -4,6 +4,9 @@
 [submodule "extensions/asdc"]
 	path = extensions/asdc
 	url = git://github.com/symphonycms/asdc.git
+[submodule "extensions/breadcrumb"]
+	path = extensions/breadcrumb
+	url = git://github.com/symphonists/breadcrumb.git
 [submodule "extensions/markdown"]
 	path = extensions/markdown
 	url = git://github.com/symphonycms/markdown.git
@@ -112,3 +115,12 @@
 [submodule "extensions/s3upload_field"]
 	path = extensions/s3upload_field
 	url = git@github.com:wjn/s3upload_field.git
+[submodule "extensions/cron"]
+	path = extensions/cron
+	url = git://github.com/symphonists/cron.git
+[submodule "extensions/dashboard"]
+	path = extensions/dashboard
+	url = git://github.com/nickdunn/dashboard.git
+[submodule "extensions"]
+	path = extensions
+	url = git@github.com:wjn/extensions.git
