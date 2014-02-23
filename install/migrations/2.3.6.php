@@ -1,6 +1,6 @@
 <?php
 
-	Class migration_223 extends Migration{
+	Class migration_236 extends Migration {
 
 		static function run($function, $existing_version = null) {
 			self::$existing_version = $existing_version;
@@ -11,7 +11,7 @@
 				return ($canProceed === false) ? false : true;
 			}
 			catch(DatabaseException $e) {
-				Symphony::Log()->writeToLog('Could not complete upgrading. MySQL returned: ' . $e->getDatabaseErrorCode() . ': ' . $e->getDatabaseErrorMessage(), E_ERROR, true);
+				Symphony::Log()->writeToLog('Could not complete upgrading. MySQL returned: ' . $e->getDatabaseErrorCode() . ': ' . $e->getMessage(), E_ERROR, true);
 
 				return false;
 			}
@@ -23,15 +23,18 @@
 		}
 
 		static function getVersion(){
-			return '2.2.3';
+			return '2.3.6';
 		}
 
 		static function getReleaseNotes(){
-			return 'http://getsymphony.com/download/releases/version/2.2.3/';
+			return 'http://getsymphony.com/download/releases/version/2.3.6/';
 		}
 
-		static function upgrade(){
-			Symphony::Configuration()->set('version', '2.2.3', 'symphony');
+		static function upgrade() {
+			// Update the version information
+			Symphony::Configuration()->set('version', self::getVersion(), 'symphony');
+			Symphony::Configuration()->set('useragent', 'Symphony/' . self::getVersion(), 'general');
+
 			if(Symphony::Configuration()->write() === false) {
 				throw new Exception('Failed to write configuration file, please check the file permissions.');
 			}

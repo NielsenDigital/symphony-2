@@ -184,7 +184,9 @@
 		 *  returned.
 		 */
 		public function getData($field_id=null, $asObject=false){
-			$fieldData = isset($this->_data[$field_id]) ? $this->_data[$field_id] : array();
+			$fieldData = isset($this->_data[$field_id]) 
+				? $this->_data[$field_id] 
+				: array();
 
 			if(!$field_id) return $this->_data;
 			return ($asObject == true ? (object)$fieldData : $fieldData);

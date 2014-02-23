@@ -21,11 +21,11 @@
 		public function sort(&$sort, &$order, $params) {
 			$section = $params['current-section'];
 
-			// If `?unsort` is appended to the URL, then sorting information are reverted
-			// to their defaults
+			// If `?unsort` is appended to the URL, then sorting is reverted
+			// to 'none', aka. by 'entry-id'.
 			if($params['unsort']) {
-				$section->setSortingField($section->getDefaultSortingField(), false);
-				$section->setSortingOrder('asc');
+				$section->setSortingField('id', false);
+				$section->setSortingOrder('desc');
 
 				redirect(Administration::instance()->getCurrentPageURL());
 			}
@@ -52,6 +52,15 @@
 					$section->setSortingField($sort, false);
 					$section->setSortingOrder($order);
 
+					if ($params['filters']) {
+						$params['filters'] = '?' . trim($params['filters'], '&amp;');
+					}
+
+					redirect(Administration::instance()->getCurrentPageURL() . $params['filters']);
+				}
+
+				// If the sort order or direction remains the same, reload the page
+				if($sort == $section->getSortingField() && $order == $section->getSortingOrder()){
 					if ($params['filters']) {
 
 						$params['filters'] = '?' . trim($params['filters'], '&amp;');
@@ -1302,11 +1311,9 @@
 							));
 
 							foreach($entries['records'] as $e) {
-								$value = $field->prepareTableValue($e->getData($field->get('id')), null, $e->get('id'));
-								$li = new XMLElement('li');
-								$a = new XMLElement('a', strip_tags($value));
-								$a->setAttribute('href', SYMPHONY_URL . '/publish/' . $as['handle'] . '/edit/' . $e->get('id') . '/');
-								$li->appendChild($a);
+								// let the field create the mark up
+								$li = $field->prepareAssociationsDrawerXMLElement($e, $as);
+								// add it to the unordered list
 								$ul->appendChild($li);
 							}
 
