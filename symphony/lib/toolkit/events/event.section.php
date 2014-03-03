@@ -397,7 +397,7 @@
 		$this->eParamFILTERS = array();
 	}
 
-	$result = new XMLElement(self::ROOTELEMENT);
+	$result = new XMLElement($this->ROOTELEMENT);
 
 	if(in_array('admin-only', $this->eParamFILTERS) && !Symphony::Engine()->isLoggedIn()){
 		$result->setAttribute('result', 'error');
